@@ -1,7 +1,17 @@
-s='python'
-print(s[0]) #retorno 'p'
-print(s[-1]) #retorno 'n'
-print(s[1:4]) #retorno 'yth'
+x='python'
+print(x[0]) #retorno 'p'
+print(x[-1]) #retorno 'n'
+print(x[1:4]) #retorno 'yth'
 
-print(s[2:])
-print(s[:3])
+print(x[2:])
+print(x[:3])
+
+s='abcdefghijklmnop'
+print(s[1:10:2])
+#retorno 'bdfhj'
+
+print(s[::2])
+#retorno 'acegikmo'
+
+p = 'alo'
+print(p[::-1])
