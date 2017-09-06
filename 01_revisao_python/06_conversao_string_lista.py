@@ -19,3 +19,11 @@ w=''
 w = w.join(l)
 print(w)
 print(type(w))
+
+#conversão utilizando o split
+s2='joao,paulo,pedro,marcos'
+print(s2)
+print(type(s2))
+l2=s2.split(",")
+print(l2)
+print(type(l2))
