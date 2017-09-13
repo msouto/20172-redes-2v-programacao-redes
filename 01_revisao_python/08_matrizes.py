@@ -28,3 +28,18 @@ print(l)
 #adicionar vários itens ao final da lista
 l.extend([10,11,12])
 print(l)
+#remover o ultimo elemento
+l.pop()
+print(l)
+#remover por posição
+l.pop(3)
+print(l)
+#inverte a ordem
+print(l.reverse())
+#remover por conteúdo
+l.remove(11)
+print(l)
+#ordenar a lista
+abc=['zenaide','amanda','carla','luiza','bruna']
+abc.sort()
+print(abc)
