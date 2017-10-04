@@ -1,7 +1,7 @@
 import sys
 
 def check_data(meses, data_num):
-    if len(data_num) == 1 or int(data_num[0]) not in range(1, 32) or int(data_num[1]) not in range(1, 13) or len(data_num[2]) != 4:
+    if len(data_num) == 1 or int(data_num[0]) not in range(1, 32) or int(data_num[1]) not in range(1, 13) or len(data_num[2]) != 4 or not data_num[2].isnumeric():
         return "Verifique o formato da data inserida"
     else:
         return data_num[0] + ' de ' + meses[int(data_num[1])-1] + ' de ' + data_num[2]
