@@ -1,9 +1,15 @@
 import sys
 
+def check_data(meses, data_num):
+    if len(data_num) == 1 or int(data_num[0]) not in range(1, 32) or int(data_num[1]) not in range(1, 13) or len(data_num[2]) != 4:
+        return "Verifique o formato da data inserida"
+    else:
+        return data_num[0] + ' de ' + meses[int(data_num[1])-1] + ' de ' + data_num[2]
+
 def data_por_extenso(texto):
     meses=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro', 'outubro','novembro','dezembro']
     data_num = texto.split('/')
-    return data_num[0] + ' de ' + meses[int(data_num[1])-1] + ' de ' + data_num[2]
+    return check_data(meses, data_num)
 
 def main():
     if len(sys.argv) == 2:
