@@ -13,3 +13,11 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+#Exercício 02
+#======================================================
+#Modifique o código anterior, incluindo um método que teste se a data passada como argumento está dentro de algumas regras esperadas:
+##Dia do mês entre 1 e 31
+##Mês entre 1 e 12
+##Ano com quatro dígitos numéricos
+##Separador como “/“
