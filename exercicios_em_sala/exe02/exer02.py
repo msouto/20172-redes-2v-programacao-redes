@@ -1,3 +1,4 @@
+
 import sys
 
 def valida_data(data):
@@ -5,13 +6,13 @@ def valida_data(data):
     if len(data) == 1 :
         print('Digite a data separada com "/" (barras)')
 
-    if int(data[0]) < 1 and int(data[0] > 31:
+    elif int(data[0]) not in range(1, 32):
         print('Insira um dia de 1 a 31')
 
-    if int(data[1]) < 1 and int(data[1]) > 12:
+    elif int(data[1]) not in range(1, 13):
         print('Insira um mês de 1 a 12')
-    if len(data[2]) != 4:
-
+        
+    elif len(data[2]) != 4:
         print('Insira um ano com 4 digitos')
     else:
         return "ok"
@@ -28,19 +29,10 @@ def main():
     elif len(sys.argv) > 2:
         print('Voce deve passar apenas um argumento com a data a ser convertida!')
     else:
-        if valida_data(sys.argv[1]) == "ok"
+        if valida_data(sys.argv[1]) == "ok":
             print(data_por_extenso(sys.argv[1]))
      
         
 
 if __name__ == '__main__':
   main()
-
-
-#Exercício 02
-#======================================================
-#Modifique o código anterior, incluindo um método que teste se a data passada como argumento está dentro de algumas regras esperadas:
-##Dia do mês entre 1 e 31
-##Mês entre 1 e 12
-##Ano com quatro dígitos numéricos
-##Separador como “/“
