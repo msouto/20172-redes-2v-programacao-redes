@@ -1,5 +1,5 @@
 #arquivo de resolucao exercicio
-
+#pontuação extra de +0,5 para João Pedro Barbosa Medeiros - Primeiro a resolver o exercício
 import random
 
 def Arquivo():
