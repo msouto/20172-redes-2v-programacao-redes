@@ -15,3 +15,4 @@ print(s[::2])
 
 p = 'alo'
 print(p[::-1])
+#retorno 'ola'
