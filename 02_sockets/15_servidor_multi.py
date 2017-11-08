@@ -18,6 +18,7 @@ class ThreadedServer(object):
             #timeout do cliente
             client.settimeout(60)
             print("Conexão de: ",address)
+            #inicializo a thread para o cliente
             threading.Thread(target = self.listenToClient,args = (client,address)).start()
 
     def listenToClient(self,client,address):
@@ -26,7 +27,7 @@ class ThreadedServer(object):
             #tratamento de exceção
             try:
                 data = client.recv(size)
-                print("\n Mensagem recebida: ", repr(data))
+                print("\n IP:",address,": Mensagem recebida: ", repr(data))
                 #se receber dados, enviará de volta, como um eco, a mesma mensagem
                 if data:
                     response = data
