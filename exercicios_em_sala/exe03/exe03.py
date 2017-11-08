@@ -7,14 +7,18 @@ PORT = 2000
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((HOST,PORT))
-
-while True:
+COUNT = 0
+VAL = True
+while VAL == True:
     threading.Thread().start()
-    message = input("Digite mensagem: ")
-    byte_message = message.encode('utf-8')
+    COUNT = COUNT+1
+    if COUNT > 5:
+         VAL = False
+    message = "Mensagem da thread "+str(COUNT)+"."
+    byte_message = str(message).encode('utf-8')
     client_socket.send(byte_message)
 
     data = client_socket.recv(1024)
     print(data)
 
-tcp_client_socket.close
+client_socket.close
