@@ -1,0 +1,35 @@
+mcsoutopro-2:02_sockets moises$ python3.6 16_servidor_udp.py
+Servidor pronto para receber:
+Conexão de:  ('10.25.3.33', 57748)
+
+ b'THIAGO FREITAS'
+Conexão de:  ('10.25.1.140', 51260)
+
+ b'JOAO PAULO DE AZEVEDO LIMA'
+Conexão de:  ('10.25.1.82', 44369)
+
+ b'ISRAEL TALLES QUEIROZ DE BRITO'
+Conexão de:  ('10.25.2.240', 51830)
+
+ b'CAROL'
+Conexão de:  ('10.25.1.144', 33982)
+
+ b'JALDO LIMA'
+Conexão de:  ('10.25.1.142', 41607)
+
+ b'ANA GISELI'
+Conexão de:  ('10.25.2.244', 65244)
+
+ b'JO\xc3\xa3O PAULO DE FREITAS NUNES'
+Conexão de:  ('10.25.1.92', 47829)
+
+ b'SILVIO'
+Conexão de:  ('10.25.1.140', 35809)
+
+ b'JOAO PAULO DE AZEVEDO LIMA'
+Conexão de:  ('10.25.1.81', 58905)
+
+ b'RASMANA'
+Conexão de:  ('10.25.1.81', 44161)
+
+ b'RASMANA'
