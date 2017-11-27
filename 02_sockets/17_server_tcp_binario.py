@@ -1,6 +1,6 @@
 import socket
 from threading import Thread
-from SocketServer import ThreadingMixIn
+from socketserver import ThreadingMixIn
 
 TCP_IP = 'localhost'
 TCP_PORT = 9001
@@ -29,9 +29,9 @@ class ClientThread(Thread):
                 break
 
 
-tcpsock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-tcpsock = setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-tcpsock = bind((TCP_IP,TCP_PORT))
+tcpsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+tcpsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+tcpsock.bind((TCP_IP, TCP_PORT))
 threads = []
 
 while True:
